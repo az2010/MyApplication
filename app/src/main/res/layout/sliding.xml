@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/hello_world" />
+
+    <SlidingDrawer
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/slide_content"
+        android:handle="@+id/slide_handle"
+        android:orientation="horizontal"
+        android:rotation="180" >
+
+        <Button
+            android:id="@id/slide_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/slide_handle" />
+
+        <TextView
+            android:id="@id/slide_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:rotation="180"
+            android:text="@string/slide_content" />
+    </SlidingDrawer>
+
+</RelativeLayout>
