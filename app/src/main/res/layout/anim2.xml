@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <test.owen.com.myapplication.view.View360
+        android:id="@+id/anim2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/anim2_height"
+        android:background="@drawable/anim2_bg" />
+
+    <Button
+        android:id="@+id/run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anim2"
+        android:text="@string/run" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/run"
+        android:text="@string/stop" />
+
+</RelativeLayout>
